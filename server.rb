@@ -15,7 +15,7 @@ $debug = 'up and running'
 Thread.new {
   loop do
     begin
-      sleep($code ? 10 : 5)
+      sleep($code ? 1500 : 5)
       next unless $code
       if $token
         res = Helper.provision_refresh_token($refresh, client_id)
